@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center; /* 배경 이미지 */
+      background-size: cover; /* 배경 이미지 크기 조정 */
+      color: white; /* 흰색 글씨 */
+      height: 100vh; /* 전체 화면 높이 */
+      display: flex;
+      align-items: center; /* 수직 중앙 정렬 */
+      justify-content: center; /* 수평 중앙 정렬 */
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정색 오버레이 */
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center; /* 수직 중앙 정렬 */
+      justify-content: center; /* 수평 중앙 정렬 */
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+    .card {
+      transition: transform 0.3s ease; /* 부드러운 트랜지션 효과 */
+    }
+    .card:hover {
+      transform: scale(1.05); /* 카드 크기를 1.05배로 확대 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <div>
+        <h1 class="display-4">케이뱅크 사진공유 페이지</h1>
+        <p class="lead">감성 사진을 공유합니다</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">MyWebsite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/1600x900/?landscape" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">자연풍경 사진</h5>
+            <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+            <p class="card-text">여행가서 찍은 풍경사진 입니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/1600x900/?mountains" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">자연풍경 사진</h5>
+            <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+            <p class="card-text">여행가서 찍은 풍경사진 입니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/1600x900/?forest" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">자연풍경 사진</h5>
+            <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+            <p class="card-text">여행가서 찍은 풍경사진 입니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
